@@ -2,11 +2,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        int age = 19;
+        int age = 17;
         if (age >= 18) {
             System.out.println(" Ты совершенолетний ");
-        }
-        if (age < 18) {
+        } else if (age < 18) {
             System.out.println(" Ты не достиг совершенолетия, нужно немного подождать");
         }
 
@@ -14,8 +13,7 @@ public class Main {
         int coldly = 6;
         if (coldly <= 5) {
             System.out.println(" На улице " + coldly + " градусов" + " нужно надеть шапку");
-        }
-        if (coldly > 5) {
+        } else if (coldly > 5) {
             System.out.println(" На улице " + coldly + " градусов" + " можно идти без шапки ");
         }
 
@@ -23,8 +21,7 @@ public class Main {
         int speed = 100;
         if (speed >= 60) {
             System.out.println("Если скорость " + speed + " км/ч, " + " то придется заплатить штраф");
-        }
-        if (speed < 60) {
+        } else if (speed < 60) {
             System.out.println("Если скорость " + speed + " км/ч, " + " можно ездить спокойно ");
         }
 
@@ -61,11 +58,15 @@ public class Main {
 
 
         int capacityVan = 102;
-        if (capacityVan >= 60) {
-            System.out.println("Есть место в вагоне - стоячие");
-        } else {
-            System.out.println("Вагон уже полностью забит");
-        }
+        int sedentaryPlaces = 60;
+        int standingPlaces = capacityVan - sedentaryPlaces;{
+
+        } if (capacityVan >=50) {
+            System.out.println("Есть место в вагоне - стоячие " + standingPlaces);
+        } else  if (standingPlaces <=60){
+                System.out.println("Вагон уже полностью забит");
+            }
+
 
 
         int one = 1;
